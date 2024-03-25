@@ -1,0 +1,155 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+// Блок со спойлерами
+.spollers {
+	display: grid;
+	gap: 1px;
+}
+
+// Спойлер
+.spollers__item {
+	font-size: rem(20);
+	overflow: hidden;
+}
+
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	padding: rem(30);
+	position: relative;
+	transition: all 0.3s ease 0s;
+	background: #f4f6f6;
+	color: #000;
+	position: relative;
+	z-index: 2;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 100%;
+
+	&:hover {}
+
+	@media (max-width:$laptop) {
+		padding: rem(30) rem(20);
+	}
+
+	@media (max-width:em(959.98)) {
+		padding: rem(30) rem(10);
+	}
+
+	@media (max-width:$mobile) {
+		background: #212121;
+		color: #fff;
+	}
+
+	._spoller-init & {
+		padding-left: rem(90);
+		background: #ea2427;
+		color: #fff;
+		cursor: pointer;
+
+		@media (max-width:$laptop) {
+			padding-left: rem(70);
+		}
+
+		@media (max-width:$tablet) {
+			padding-left: rem(65);
+		}
+
+		@media (max-width:em(959.98)) {
+			padding-left: rem(60);
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 22px;
+			top: 50%;
+			transform: translateY(-50%);
+			background: #000 url(../img/j1/spoller.svg) center center / 16px 16px no-repeat;
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+			transition: transform 0.5s ease 0s;
+
+			@media (max-width:$laptop) {
+				left: 20px;
+			}
+
+			@media (max-width:$tablet) {
+				left: 15px;
+			}
+
+			@media (max-width:em(959.98)) {
+				left: 10px;
+			}
+
+			// @media (max-width:$mobileSmall) {
+			// 	width: 20px;
+			// 	height: 20px;
+			// 	left: 15px;
+			// 	background: #fff url(../img/spoller.svg) center center / 16px 16px no-repeat;
+			// }
+		}
+
+		&._spoller-active {
+			background: #f4f6f6;
+			color: #000;
+
+			@media (max-width:$mobile) {
+				background: #212121;
+				color: #fff;
+			}
+
+			&:hover {}
+
+			&::before {
+				background: #b0b0b0 url(../img/j1/spoller-active.svg) center center / 16px 16px no-repeat;
+				transform: translateY(-50%) rotate(-180deg);
+			}
+		}
+
+		/*
+		._spoller-init & {
+			position: relative;
+			width: 100%;
+			text-align: left;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: rem(12);
+				height: rem(1);
+				transition: all 0.3s ease 0s;
+				width: rem(10);
+				background-color: #000;
+			}
+			&::before {
+				transform: rotate(40deg);
+				right: rem(7);
+			}
+			&::after {
+				transform: rotate(-40deg);
+			}
+		}
+		&._spoller-active {
+			&::before {
+				transform: rotate(-40deg);
+			}
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+		*/
+	}
+}
+
+// Контент спойлера
+.spollers__body {
+	position: relative;
+	z-index: 1;
+	background: transparent;
+}
