@@ -1,0 +1,527 @@
+@@include('html/_header.htm',{
+"title":"Catalog page",
+"modifierClass":""
+})
+
+<main class="page">
+   <div class="page-title-image-ibg"><img src="@img/j1/page-title-bg.png" alt="">
+      <h1 class="page-title">Catalogue search</h1>
+   </div>
+
+
+   <div class="catalog-search">
+      <div class="catalog-search__container">
+         <div data-tabs data-tabs-animate="300" class="catalog-search__tabs">
+            <nav data-tabs-titles class="catalog-search__tab-navigation">
+               <button type="button" class="catalog-search__tab-title">Product</button>
+               <button type="button" class="catalog-search__tab-title _tab-active">Application</button>
+               <button type="button" class="catalog-search__tab-title">VIN</button>
+            </nav>
+            <div data-tabs-body class="catalog-search__tab-content">
+               <div class="catalog-search__tab-body">
+                  <form action="" class="form product-search-form">
+                     <div class="form__row">
+                        <div class="form__line">
+                           <label class="form__label">
+                              <input type="search" name="OEM" data-error="Error" placeholder="Enter AZFilter No, OEM No, Other No.." class="form__input">
+                           </label>
+                        </div>
+                        <button type="submit" class="form__button">Search</button>
+                     </div>
+                  </form>
+               </div>
+               <div class="catalog-search__tab-body">
+                  <form action="" class="form application-search-form">
+                     <div class="form__grid">
+                        <div class="form__fst-row">
+                           <div class="form__line">
+                              <select class="form__select" required="required" data-live-search="true" data-size="8" title="Marker">
+                                 <option value="1">ACURA</option>
+                                 <option value="2">ALFA ROMEO</option>
+                                 <option value="227">ARO</option>
+                                 <option value="3">ASIA MOTORS</option>
+                                 <option value="4">ASTON MARTIN</option>
+                                 <option value="5">AUDI</option>
+                                 <option value="447">BAW</option>
+                                 <option value="6">BENTLEY</option>
+                                 <option value="7">BMW</option>
+                                 <option value="8">BMW (Alpina)</option>
+                                 <option value="9">BMW (Alpina)</option>
+                              </select>
+                           </div>
+                           <div class="form__line">
+                              <select class="form__select" data-live-search="true" data-size="8" title="Class/series">
+                                 <option value="118" data-value1="" data-value2="Arnage" data-maintext=""> Arnage</option>
+                                 <option value="119" data-value1="" data-value2="Azure" data-maintext=""> Azure</option>
+                                 <option value="21385" data-value1="" data-value2="Bentayga" data-maintext=""> Bentayga</option>
+                                 <option value="120" data-value1="" data-value2="Brooklands" data-maintext=""> Brooklands</option>
+                                 <option value="20939" data-value1="" data-value2="Continental Flying Spur" data-maintext=""> Continental Flying Spur</option>
+                                 <option value="121" data-value1="" data-value2="Continental GT" data-maintext=""> Continental GT</option>
+                                 <option value="20940" data-value1="" data-value2="Continental GTC" data-maintext=""> Continental GTC</option>
+                                 <option value="22190" data-value1="" data-value2="Flying Spur" data-maintext=""> Flying Spur</option>
+                                 <option value="122" data-value1="" data-value2="Mulsanne" data-maintext=""> Mulsanne</option>
+                                 <option value="123" data-value1="" data-value2="Turbo RS" data-maintext=""> Turbo RS</option>
+                              </select>
+                           </div>
+                           <div class="form__line">
+                              <select class="form__select" data-live-search="true" data-size="8" title="Model">
+                                 <option value="393 - 39323B">39323B</option>
+                                 <option value="394 - 39423B">39423B</option>
+                                 <option value="3W2 - 3W245A">3W245A</option>
+                                 <option value="3W2 - 3W246A">3W246A</option>
+                                 <option value="3W4 - 3W445A">3W445A</option>
+                                 <option value="3Y_ - 3Y212A">3Y212A</option>
+                                 <option value="3Y_ - 3Y213A">3Y213A</option>
+                                 <option value="4V1 - 4V14A9">4V14A9</option>
+                                 <option value="4V1 - 4V14B9">4V14B9</option>
+                                 <option value="4V1 - 4V14D9">4V14D9</option>
+                                 <option value="4W214B">4W214B</option>
+                                 <option value="R">R</option>
+                                 <option value="S">S</option>
+                                 <option value="SC">SC</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form__snd-row">
+                           <div class="form__line">
+                              <select class="form__select" data-live-search="true" data-size="8" title="Year">
+                                 <option value="2023">2023</option>
+                                 <option value="2022">2022</option>
+                                 <option value="2021">2021</option>
+                                 <option value="2020">2020</option>
+                                 <option value="2019">2019</option>
+                                 <option value="2018">2018</option>
+                                 <option value="2017">2017</option>
+                                 <option value="2016">2016</option>
+                                 <option value="2015">2015</option>
+                                 <option value="2014">2014</option>
+                                 <option value="2013">2013</option>
+                                 <option value="2012">2012</option>
+                                 <option value="2011">2011</option>
+                                 <option value="2010">2010</option>
+                                 <option value="2009">2009</option>
+                                 <option value="2008">2008</option>
+                                 <option value="2007">2007</option>
+                                 <option value="2006">2006</option>
+                                 <option value="2005">2005</option>
+                                 <option value="2004">2004</option>
+                                 <option value="2003">2003</option>
+                                 <option value="2002">2002</option>
+                                 <option value="2001">2001</option>
+                                 <option value="2000">2000</option>
+                                 <option value="1999">1999</option>
+                                 <option value="1998">1998</option>
+                                 <option value="1997">1997</option>
+                                 <option value="1996">1996</option>
+                                 <option value="1995">1995</option>
+                                 <option value="1994">1994</option>
+                                 <option value="1993">1993</option>
+                                 <option value="1992">1992</option>
+                                 <option value="1991">1991</option>
+                                 <option value="1990">1990</option>
+                                 <option value="1989">1989</option>
+                                 <option value="1988">1988</option>
+                                 <option value="1987">1987</option>
+                                 <option value="1986">1986</option>
+                                 <option value="1985">1985</option>
+                                 <option value="1984">1984</option>
+                                 <option value="1983">1983</option>
+                                 <option value="1982">1982</option>
+                                 <option value="1981">1981</option>
+                              </select>
+                           </div>
+                           <div class="form__line">
+                              <select class="form__select" data-live-search="true" data-size="8" title="Body / Chassis">
+                                 <option value="--">--</option>
+                                 <option value="BEB">BEB</option>
+                                 <option value="BMW V8">BMW V8</option>
+                                 <option value="BWR">BWR</option>
+                                 <option value="BWRA">BWRA</option>
+                                 <option value="CKBB">CKBB</option>
+                                 <option value="CKHD">CKHD</option>
+                                 <option value="CMMC">CMMC</option>
+                                 <option value="CVAA">CVAA</option>
+                                 <option value="CZAA">CZAA</option>
+                                 <option value="CZMA">CZMA</option>
+                                 <option value="DCUA">DCUA</option>
+                                 <option value="DDBB">DDBB</option>
+                                 <option value="L410">L410</option>
+                                 <option value="L410I">L410I</option>
+                                 <option value="L410IT">L410IT</option>
+                                 <option value="L410MT">L410MT</option>
+                                 <option value="L410MT1T">L410MT1T</option>
+                                 <option value="L410MTIT">L410MTIT</option>
+                              </select>
+                           </div>
+                           <div class="form__line">
+                              <select disabled class="form__select" data-live-search="true" data-size="8" title="Engine vol">
+                                 <option value="4000">4000</option>
+                                 <option value="4400">4400</option>
+                                 <option value="6000">6000</option>
+                                 <option value="6800">6800</option>
+                              </select>
+                           </div>
+                           <div class="form__line">
+                              <select disabled class="form__select" data-live-search="true" data-size="8" title="Engine No">
+                                 <option value="4000">4000</option>
+                                 <option value="4400">4400</option>
+                                 <option value="6000">6000</option>
+                                 <option value="6800">6800</option>
+                              </select>
+                           </div>
+                           <button type="submit" class="form__button">Search</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="catalog-search__tab-body">
+                  <form action="" class="form product-search-form">
+                     <div class="form__row">
+                        <div class="form__line">
+                           <label class="form__label">
+                              <input type="search" name="OEM" data-error="Error" placeholder="Enter VIN No" class="form__input">
+                           </label>
+                        </div>
+                        <button type="submit" class="form__button">Search</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="product-card">
+      <div class="product-card__container">
+         <div class="product-card__header">
+            <h2 class="product-card__name">ROTOR DISC — RN1218V</h2>
+            <a href="" data-popup="#feedback" class="product-card__link">Make an amedment</a>
+         </div>
+         <div class="product-card__main">
+            <div class="product-card__image-ibg product-card__image-ibg_contain"><img src="@img/j1/product-card_image.png" alt=""></div>
+            <div class="product-card__content">
+               <div class="product-card__spec">
+                  <h3 class="product-card__title">Specification</h3>
+                  <div class="product-card__col">
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Type</div>
+                        <div class="product-card__prop-value">Vented</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Num. of holes</div>
+                        <div class="product-card__prop-value">5</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Centering Diameter</div>
+                        <div class="product-card__prop-value">64</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Front/Rear</div>
+                        <div class="product-card__prop-value">Front</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Drum Ø:</div>
+                        <div class="product-card__prop-value">141</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Structure Material</div>
+                        <div class="product-card__prop-value">G3000</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Disc Thickness (Max)</div>
+                        <div class="product-card__prop-value">23</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Height</div>
+                        <div class="product-card__prop-value">47</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Pitch Circle Ø</div>
+                        <div class="product-card__prop-value">114.3</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Outter Ø</div>
+                        <div class="product-card__prop-value">282</div>
+                     </div>
+                     <div class="product-card__prop">
+                        <div class="product-card__prop-name">Disc Thickness (Min)</div>
+                        <div class="product-card__prop-value">21</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="product-card__alt">
+                  <h3 class="product-card__title">Alternative</h3>
+                  <div class="product-card__alt-links">
+                     <a href="" class="product-card__alt-link">PN8397[NiBK]</a>
+                     <a href="" class="product-card__alt-link">PN8397[NiBK]</a>
+                     <a href="" class="product-card__alt-link">PN8397[NiBK]</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="product-card__cross">
+            <h3 class="product-card__title">Cross Reference</h3>
+            <div class="product-card__col">
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Type</div>
+                  <div class="product-card__prop-value">Vented</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Num. of holes</div>
+                  <div class="product-card__prop-value">5</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Centering Diameter</div>
+                  <div class="product-card__prop-value">64</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Front/Rear</div>
+                  <div class="product-card__prop-value">Front</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Drum Ø:</div>
+                  <div class="product-card__prop-value">141</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Structure Material</div>
+                  <div class="product-card__prop-value">G3000</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Disc Thickness (Max)</div>
+                  <div class="product-card__prop-value">23</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Height</div>
+                  <div class="product-card__prop-value">47</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Pitch Circle Ø</div>
+                  <div class="product-card__prop-value">114.3</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Outter Ø</div>
+                  <div class="product-card__prop-value">282</div>
+               </div>
+               <div class="product-card__prop">
+                  <div class="product-card__prop-name">Disc Thickness (Min)</div>
+                  <div class="product-card__prop-value">21</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="search-res">
+      <div class="search-res__container">
+         <div class="search-res__headline">
+            <div class="search-res__type-name">YEARS</div>
+            <div class="search-res__type-name">ENG</div>
+            <div class="search-res__type-name">ENG NO</div>
+            <div class="search-res__type-name">BODY</div>
+            <div class="search-res__type-name">FRONT ROTOR</div>
+            <div class="search-res__type-name">FRONT BRAKE</div>
+            <div class="search-res__type-name">REAR ROTOR</div>
+            <div class="search-res__type-name">REAR BRAKE</div>
+            <div class="search-res__type-name">PARKING SHOE</div>
+         </div>
+         <div data-spollers class="spollers">
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Honda — Accord</button>
+               <div class="spollers__body">
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Honda — Accord Tourer</button>
+               <div class="spollers__body">
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Honda — Civic</button>
+               <div class="spollers__body">
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                        <a href="">RN1609</a>
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Honda — Accord Tourer</button>
+               <div class="spollers__body">
+                  <div class="search-res-row">
+                     <div class="search-res-row__item" data-title="YEARS">06.13~03.16</div>
+                     <div class="search-res-row__item" data-title="ENG">2000</div>
+                     <div class="search-res-row__item" data-title="ENG NO">LFA-MF8</div>
+                     <div class="search-res-row__item" data-title="BODY">CR5 JPN</div>
+                     <div class="search-res-row__item" data-title="FRONT ROTOR">
+                        <a href="">RN1418V</a>
+                        <a href="">RN1418V</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="FRONT BRAKE">
+                        <a href="">PN28005</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR ROTOR">
+                        <a href="">RN1609</a>
+                        <a href="">RN1609</a>
+                        <a href="">RN1609</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="REAR BRAKE">
+                        <a href="">PN8807</a>
+                     </div>
+                     <div class="search-res-row__item" data-title="PARKING SHOE">
+                        <a href="">FN0663</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</main>
+
+@@include('html/_footer.htm',{})
