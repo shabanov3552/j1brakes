@@ -2668,7 +2668,10 @@
         })(jQuery);
     }));
     $(document).ready((function() {
-        $("select").selectpicker({});
+        $("select").selectpicker({
+            dropupAuto: false,
+            doneButtonText: "Search"
+        });
     }));
     window["FLS"] = false;
     isWebp();

@@ -8,6 +8,10 @@ import { flsModules } from "./modules.js";
 
 $(document).ready(function () {
    $('select').selectpicker({
+      dropupAuto: false,
+      // mobile: true,
+      // size: 8,
+      doneButtonText: 'Search'
    });
 });
 
